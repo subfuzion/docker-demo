@@ -49,3 +49,13 @@ Introduce docker compose
 # Demo 4
 
 More complicated compose with replicas
+
+# Demo 5
+
+https://github.com/subfuzion/voting-app
+http://bit.ly/voting-app-with-docker
+
+# Demo 6
+
+https://hub.docker.com/_/dart
+https://github.com/GoogleCloudPlatform/functions-framework-dart
