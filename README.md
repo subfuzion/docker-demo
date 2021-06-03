@@ -11,7 +11,7 @@ https://docs.docker.com/engine/reference/commandline/
 Run a bash shell in a container and attach a terminal to run
 commands interactively
   
-    docker -it --rm --name demo debian bash
+    docker run -it --rm --name demo debian bash
 
 Note that this is a normal Linux environment in the container
 
