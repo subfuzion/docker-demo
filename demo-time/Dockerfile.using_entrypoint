@@ -1,0 +1,4 @@
+FROM debian
+COPY get-time.sh /usr/local/bin
+ENTRYPOINT [ "/usr/local/bin/get-time.sh" ]
+CMD [ "2" ]

@@ -1,10 +1,4 @@
-
-
-
-Docker command-line reference
-https://docs.docker.com/engine/reference/commandline/
-
-
+[cheatsheet](cheatsheet.md)
 
 # Demo 1 
 
@@ -38,9 +32,23 @@ Save the container to an image
 
 Create a new container from the image
 
-# Demo 2
+# Demo 2.1
 
 Introduce Dockerfile
+
+# Demo 2.2
+
+[demo-time](./demo-time/)
+* Discuss difference between CMD and ENTRYPOINT
+* Review [cheatsheet](cheatsheet.md) using this example
+
+Using CMD
+
+    docker build -f Dockerfile.using_cmd -t get-time .
+
+Using ENTRYPOINT
+
+    docker build -f Dockerfile.using_entrypoint -t get-time . 
 
 # Demo 3
 
