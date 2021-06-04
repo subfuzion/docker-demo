@@ -7,11 +7,9 @@
 freq=${1:-5}
 echo "Fetch UTC(NIST) time every ${freq} seconds..."
 
-label='UTC(NIST)'
-
 while true; do
   if dt=$(cat </dev/tcp/time.nist.gov/13 | tail -n 1); then
-    if [[ "$dt" =~ .*"$label".* ]]; then
+    if [[ "$dt" =~ .*"UTC(NIST)".* ]]; then
       d=$(echo "$dt" | cut -d " " -f 2)
       t=$(echo "$dt" | cut -d " " -f 3)
       echo "$d $t"
